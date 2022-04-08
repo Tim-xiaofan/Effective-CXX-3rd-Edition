@@ -5,3 +5,13 @@ Chapter 2. Constructors, Destructors, and Assignment Operators/Item 9 Never call
 Chapter 2. Constructors, Destructors, and Assignment Operators/Item 12 Copy all parts of an object/item12
 Chapter 2. Constructors, Destructors, and Assignment Operators/Item 11 Handle assignment to self in operator=/core
 Chapter 2. Constructors, Destructors, and Assignment Operators/Item 11 Handle assignment to self in operator=/item11
+Chapter 4. Designs and Declarations/Item 20 Prefer pass-by-reference-to-const to pass-by-value/item20
+Chapter 4. Designs and Declarations/Item 18 Make interfaces easy to use correctly and hard to use incorrectly/item18
+Chapter 4. Designs and Declarations/Item 24 Declare non-member functions when type conversions should apply to all parameters/item24
+Chapter 4. Designs and Declarations/Item 21 Do not try to return a reference when you must return an object/item21
+Chapter 3. Resource Management/Item 15 Provide access to raw resources in resource-managing classes/item15
+Chapter 3. Resource Management/Item 16 Use the same form in corresponding uses of new and delete/core
+Chapter 3. Resource Management/Item 16 Use the same form in corresponding uses of new and delete/item16
+Chapter 3. Resource Management/Item 17 Store newed objects in smart pointers in standalone statements/core
+Chapter 3. Resource Management/Item 17 Store newed objects in smart pointers in standalone statements/item17
+Chapter 4. Designs and Declarations/Item 25 Consider support for a non-throwing swap/item25

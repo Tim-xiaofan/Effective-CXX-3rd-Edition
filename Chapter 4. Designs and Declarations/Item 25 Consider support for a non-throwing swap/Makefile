@@ -2,7 +2,7 @@
 # Copyright(c) 2010-2014 Intel Corporation
 
 # binary name
-APP = item7
+APP = item25
 
 # all source are stored in SRCS-y
 SRCS-y := $(APP).cpp
@@ -20,12 +20,12 @@ endif
 endif
 endif
 
-tag=0
+tag=1
 
 # Add flag 
 CPPFLAGS += -g -Wall 
 ifeq ($(tag), 1)
-CPPFLAGS += -DVIRTUAL
+CPPFLAGS += -DNON_MEMBER
 endif
 
 $(APP): $(SRCS-y) Makefile 
