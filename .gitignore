@@ -1,3 +1,4 @@
+.vscode
 Chapter 2. Constructors, Destructors, and Assignment Operators/Item 8 Prevent exceptions from leaving destructors/item8
 Chapter 2. Constructors, Destructors, and Assignment Operators/Item 10 Have assignment operators return a reference to *this/item10
 Chapter 2. Constructors, Destructors, and Assignment Operators/Item 7 Declare destructors virtual in polymorphic base classes/item7
@@ -15,3 +16,8 @@ Chapter 3. Resource Management/Item 16 Use the same form in corresponding uses o
 Chapter 3. Resource Management/Item 17 Store newed objects in smart pointers in standalone statements/core
 Chapter 3. Resource Management/Item 17 Store newed objects in smart pointers in standalone statements/item17
 Chapter 4. Designs and Declarations/Item 25 Consider support for a non-throwing swap/item25
+Chapter 5. Implementations/Item 27  Minimize casting/item27
+Chapter 5. Implementations/Item 28 Avoid returning handles to object internals/item28
+Chapter 5. Implementations/Item 29 Strive for exception-safe code/item29
+Chapter 5. Implementations/Item 26 Postpone variable definitions as long as possible/item26
+Chapter 5. Implementations/Item 30 Understand the ins and outs of inlining/item30
