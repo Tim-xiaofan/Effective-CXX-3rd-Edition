@@ -15,3 +15,9 @@ Things to Remember
 # Item 30: Understand the ins and outs of inlining
 * Limit most inlining to small, frequently called functions. This facilitates debugging and binary upgradability, minimizes potential code bloat, and maximizes the chances of greater program speed
 * Don't declare function templates inline just because they appear in header files
+
+# Item 31: Minimize compilation dependencies between files
+* The general idea behind minimizing compilation clependencies is to depend on declarations instead of
+definitions. Two approaches based on this idea are Handle classes and Interface classes. (定义依赖-->声明依赖)
+* Library header files should exist in full and deeclaration-only forms. This applies regardless of
+whether templates are involved.

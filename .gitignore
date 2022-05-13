@@ -21,3 +21,4 @@ Chapter 5. Implementations/Item 28 Avoid returning handles to object internals/i
 Chapter 5. Implementations/Item 29 Strive for exception-safe code/item29
 Chapter 5. Implementations/Item 26 Postpone variable definitions as long as possible/item26
 Chapter 5. Implementations/Item 30 Understand the ins and outs of inlining/item30
+Chapter 5. Implementations/Item 31 Minimize compilation dependencies between files/item31
