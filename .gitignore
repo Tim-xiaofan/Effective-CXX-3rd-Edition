@@ -22,3 +22,7 @@ Chapter 5. Implementations/Item 29 Strive for exception-safe code/item29
 Chapter 5. Implementations/Item 26 Postpone variable definitions as long as possible/item26
 Chapter 5. Implementations/Item 30 Understand the ins and outs of inlining/item30
 Chapter 5. Implementations/Item 31 Minimize compilation dependencies between files/item31
+Chapter 6. Inheritance and Object-Oriented Design/Item 35 Consider alternatives to virtual functions/item35
+Chapter 6. Inheritance and Object-Oriented Design/Item 33 Avoid hiding inherited names/item33
+Chapter 6. Inheritance and Object-Oriented Design/Item 34 Differentiate between inheritance of interface and inheritance of implementation/item34
+Chapter 6. Inheritance and Object-Oriented Design/Item 32 Make sure public inheritance models "is-a."/item32

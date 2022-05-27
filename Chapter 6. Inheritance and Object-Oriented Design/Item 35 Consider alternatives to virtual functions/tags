@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP	Makefile	/^APP = item35$/;"	m
+EvilBadGuy	item35.cpp	/^		explicit EvilBadGuy(HealthCalcFunc hcf = defaultHealthCalc)$/;"	f	class:EvilBadGuy
+EvilBadGuy	item35.cpp	/^class EvilBadGuy: public GameCharacter$/;"	c	file:
+EyeCandyCharacter	item35.cpp	/^class EyeCandyCharacter: public GameCharacter$/;"	c	file:
+GameCharacter	classic.cpp	/^		explicit GameCharacter(HealthCalcFunc *phcf = &defaultHealthCalc)$/;"	f	class:GameCharacter
+GameCharacter	classic.cpp	/^class GameCharacter $/;"	c	file:
+GameCharacter	item35.cpp	/^		explicit GameCharacter(HealthCalcFunc hcf = defaultHealthCalc)$/;"	f	class:GameCharacter
+GameCharacter	item35.cpp	/^class GameCharacter$/;"	c	file:
+GameLevel	item35.cpp	/^class GameLevel$/;"	c	file:
+HealthCalcFunc	classic.cpp	/^class HealthCalcFunc$/;"	c	file:
+HealthCalcFunc	item35.cpp	/^		typedef function<int (const GameCharacter&)> HealthCalcFunc;$/;"	t	class:GameCharacter	file:
+HealthCalculator	item35.cpp	/^struct HealthCalculator$/;"	s	file:
+PLATFORM	Makefile	/^		PLATFORM="MacOS"$/;"	m
+PLATFORM	Makefile	/^		PLATFORM="Unix-Like"$/;"	m
+PLATFORM	Makefile	/^		PLATFORM="Windows"$/;"	m
+SHELL	Makefile	/^		SHELL=powershell.exe$/;"	m
+SHELL	Makefile	/^SHELL=powershell.exe$/;"	m
+SRCS-y	Makefile	/^SRCS-y := $(APP).cpp classic.cpp$/;"	m
+_CLASSIC_H_	classic.h	2;"	d
+calc	classic.cpp	/^		virtual int calc(const GameCharacter& gc) const$/;"	f	class:HealthCalcFunc
+calcHealth	item35.cpp	/^short calcHealth(const GameCharacter&) \/\/ not int$/;"	f
+classic	classic.cpp	/^void classic(void)$/;"	f
+defaultHealthCalc	classic.cpp	/^HealthCalcFunc defaultHealthCalc;$/;"	v
+defaultHealthCalc	item35.cpp	/^int defaultHealthCalc(const GameCharacter& gc)$/;"	f
+health	item35.cpp	/^		float health(const GameCharacter&) const$/;"	f	class:GameLevel
+healthFunc	item35.cpp	/^		HealthCalcFunc healthFunc;$/;"	m	class:GameCharacter	file:
+healthValue	classic.cpp	/^		int healthValue() const$/;"	f	class:GameCharacter
+healthValue	item35.cpp	/^		int healthValue()const$/;"	f	class:GameCharacter
+main	item35.cpp	/^int main(int argc, char *argv[])$/;"	f
+operator ()	item35.cpp	/^	int operator()(const GameCharacter &) const$/;"	f	struct:HealthCalculator
+pHealthCalc	classic.cpp	/^		HealthCalcFunc *pHealthCalc;$/;"	m	class:GameCharacter	file:
+tag	Makefile	/^tag=1$/;"	m
