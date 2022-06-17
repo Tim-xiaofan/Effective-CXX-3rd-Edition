@@ -31,3 +31,5 @@ Chapter 6. Inheritance and Object-Oriented Design/Item 36 Never redefine an inhe
 Chapter 6. Inheritance and Object-Oriented Design/Item 39 Use private inheritance judiciously/item39
 Chapter 6. Inheritance and Object-Oriented Design/Item 37 Never redefine a function's inherited default parameter value/item37
 Chapter 6. Inheritance and Object-Oriented Design/Item 38 Model "has-a" or "is-implemented-in-terms-of" through composition/item38
+Chapter 7. Templates and Generic Programming/Item 41 Understand implicit interfaces and compile-time polymorphism/item41
+Chapter 7. Templates and Generic Programming/Item 42 Understand the two meanings of typename/item42
