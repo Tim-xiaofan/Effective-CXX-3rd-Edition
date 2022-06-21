@@ -33,3 +33,8 @@ Chapter 6. Inheritance and Object-Oriented Design/Item 37 Never redefine a funct
 Chapter 6. Inheritance and Object-Oriented Design/Item 38 Model "has-a" or "is-implemented-in-terms-of" through composition/item38
 Chapter 7. Templates and Generic Programming/Item 41 Understand implicit interfaces and compile-time polymorphism/item41
 Chapter 7. Templates and Generic Programming/Item 42 Understand the two meanings of typename/item42
+Chapter 7. Templates and Generic Programming/Item 43 Know how to access names in templatized base classes/item43
+Chapter 7. Templates and Generic Programming/Item 44 Factor parameter-independent code out of templates/item44
+Chapter 7. Templates and Generic Programming/Item 45 Use member function templates to accept all compatible types/item45
+Chapter 7. Templates and Generic Programming/Item 46 Define non-member functions inside templates when type conversions are desired/item46
+Chapter 7. Templates and Generic Programming/Item 47 Use traits classes for information about types/item47
