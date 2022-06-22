@@ -7,6 +7,7 @@
 #include <exception>
 #include <cstring>
 #include <iterator>
+#include <list>
 
 using std::cout;
 using std::endl;
@@ -14,31 +15,69 @@ using std::ostream;
 using std::string;
 using std::unique_ptr;
 using std::vector;
+using std::list;
 
-/** move iter units forward; if d < 0, move iter backward */
-//template<typename IterT, typename DistT>
-//void advance(IterT& iter, DistT d)
-//{
-//    if(iter is a random access iterator)
-//    {
-//        iter += d;
-//    }
-//    else
-//    {
-//        if(d>=0){ while(d--) ++iter; }
-//        else{ while(d++) --iter; }
-//    }
-//}
-//
-//template<typename IterT>
-//struct iterator_traits
-//{};
-//
-//template<typename IterT>
-//struct iterator_traits<IterT*>
-//{
-//    typedef random_access_iterator_tag iterator_category;
-//};
+namespace book
+{
+    template<typename IterT>
+    struct iterator_traits
+    {
+        typedef typename IterT::iterator_category iterator_category;
+    };
+
+    template<typename IterT>
+    struct iterator_traits<IterT*>
+    {//pointer
+        typedef IterT iterator_category;
+    };
+
+    /** move iter units forward; if d < 0, move iter backward */
+    template<typename IterT, typename DistT>
+    void advance(IterT& iter, DistT d)
+    {//two problem: 1.compilation problems 2. if statement is evaluation at run time
+        if(typeid(typename std::iterator_traits<IterT>::iterator_category) == 
+                    typeid(std::random_access_iterator_tag))
+        {
+            iter += d;
+        }
+        else
+        {
+            if(d>=0){ while(d--) ++iter; }
+            else{ while(d++) --iter; }
+        }
+    }
+
+    /** solution: function overload*/
+    template<typename IterT, typename DistT>
+    void doAdvance(IterT & iter, DistT d, std::random_access_iterator_tag)
+    {
+        cout << "std::random_access_iterator_tag" << endl;
+        iter += d;
+    }
+    template<typename IterT, typename DistT>
+    void doAdvance(IterT & iter, DistT d, std::bidirectional_iterator_tag)
+    {
+        cout << "std::bidirectional_iterator_tag" << endl;
+        if(d>=0){ while(d--) ++iter; }
+        else{ while(d++) --iter; }
+    }
+    template<typename IterT, typename DistT>
+    void doAdvance(IterT & iter, DistT d, std::input_iterator_tag)
+    {
+        cout << "std::input_iterator_tag" << endl;
+        if(d>=0){ while(d--) ++iter; }
+        else
+        {
+            throw std::out_of_range("Negative distance");
+        }
+    }
+    template<typename IterT, typename DistT>
+    void advance1(IterT& iter, DistT d)
+    {
+        /** use DIY iterator_traits*/
+        doAdvance(iter, d, typename iterator_traits<IterT>::iterator_category());
+    }
+}
 
 /** Template Specialization */
 template<typename T> struct is_void { static const bool value = false;};
@@ -101,6 +140,17 @@ int main(int argc, char *argv[])
         fun(b);  // 输出 fun(double) is called
         iterator_traits<char*>::value_type c = 0;
         fun(c);  // 输出 fun(char) is called
+    }
+
+    {
+        using namespace book;
+        cout << "#book" << endl;
+        vector<int> vi = {0,1,2,3};
+        auto it = vi.begin();
+        advance1(it, 2);//std::random_access_iterator_tag
+        list<int> li = {0, 1, 2, 3};
+        auto it1 = li.begin();
+        advance1(it1, 2);//std::bidirectional_iterator_tag
     }
     return 0;
 }

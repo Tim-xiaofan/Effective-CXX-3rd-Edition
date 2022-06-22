@@ -27,3 +27,13 @@
 # Item 46: Define non-member functions inside templates when type conversions are desired
 ## Things to Remember
 * When writing a class template that offers functions related to the template that support implicit type conversions on all parameters, define those functions as friends inside the class template
+
+# Item 47: Use traits classes for information about types
+## Things to Remember
+* Traits classes make information about types available during compilation. They're implemented using templates and template specializations
+* In conjunction with overloading, traits classes make it possible to perform compile-time if...else tests on types
+
+# Item 48 Be aware of template metaprogramming
+## Things to Remember
+* Template metaprogramming can shift work from runtime to compile-time, thus enabling earlier error detection and higher runtime performance.
+* TMP can be used to generate custom code based on combinations of policy choices, and it can also be used to avoid generating code inappropriate for particular types.

@@ -38,3 +38,4 @@ Chapter 7. Templates and Generic Programming/Item 44 Factor parameter-independen
 Chapter 7. Templates and Generic Programming/Item 45 Use member function templates to accept all compatible types/item45
 Chapter 7. Templates and Generic Programming/Item 46 Define non-member functions inside templates when type conversions are desired/item46
 Chapter 7. Templates and Generic Programming/Item 47 Use traits classes for information about types/item47
+Chapter 7. Templates and Generic Programming/Item 48 Be aware of template metaprogramming/item48
